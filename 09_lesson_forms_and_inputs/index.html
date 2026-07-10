@@ -22,6 +22,9 @@
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -60,27 +63,18 @@
                     </details>
                 </aside>
                 <br>
-                <!-- table element only expands to contain the content within the table. It does not expand the full width of the page. -->
                 <table>
-                    <!-- caption can say what the table is about. -->
                     <caption>My Daily Schedule</caption>
-                    <!-- table head semantic section -->
                     <thead>
-                        <!-- table row -->
                         <tr>
-                            <!-- table header -->
-                            <!-- Empty th to create empty first column for row names. -->
                             <th>&nbsp;</th>
-                            <!-- scope. Time and Activity apply for the columns. Could also use id with td with headers attribute.-->
                             <th scope="col">Time</th>
                             <th scope="col">Activity</th>
                         </tr>
                     </thead>
-                    <!-- table body semantic section -->
                     <tbody>
                         <tr>
                             <th scope="row">Morning</th>
-                            <!-- table data, our cells -->
                             <td>
                                 <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
                             </td>
@@ -110,7 +104,6 @@
                             <td>Sleep</td>
                         </tr>
                     </tbody>
-                    <!-- table footer semantic section -->
                     <tfoot>
                         <tr>
                             <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ...and
@@ -172,6 +165,24 @@
                     <dd>These are also cold.</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+            <!-- action would contain where we are sending the information (our server) -->
+            <form action="https://httpbin.org/get" method="get">
+                <!-- Every input should have a label -->
+                <!-- for attribute should match the id of the input -->
+                <label for="firstName">First Name:</label>
+                <!-- name attribute is how it is identified at the server level. placeholder is just example (not sent). autocomplete on/off for suggestions from previous values. required means this field is required with information before form can be submitted. autofocus can only be appled to one element on form/page and is focussed when page loads.. -->
+                <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                    autofocus>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+            </form>
         </article>
     </main>
     <hr>
