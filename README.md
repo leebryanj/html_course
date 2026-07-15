@@ -14,7 +14,3 @@ All original course content, project concepts, and instructional materials belon
 ## Disclaimer
 
 This repository is provided for educational and portfolio purposes only. It documents my personal learning and practice while following publicly available course materials.
-
-## License
-
-This repository is licensed under the MIT License. See the LICENSE file for details.
